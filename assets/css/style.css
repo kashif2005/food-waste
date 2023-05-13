@@ -1,0 +1,446 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --primary: '';
+    --secondary: '';
+    --accent: '';
+    --poppin: '';
+}
+
+.header {
+    text-transform: uppercase;
+}
+
+.header a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.carousel-inner .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+    object-position: top left;
+}
+
+.carousel-inner .carousel-caption {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.btn-theme {
+    width: fit-content;
+    padding: 0.5rem 2.5rem;
+    border-radius: 0;
+    font-size: 1.125rem;
+    margin-top: 1rem;
+    border: 2px solid var(--black);
+    background-color: transparent;
+    color: var(--black) !important;
+    transition: 0.5s;
+}
+
+.btn-theme:hover {
+    box-shadow: 0 0 0 2px var(--white), 0 0 0 4px var(--black);
+    background-color: var(--black);
+    color: var(--white) !important;
+}
+
+section {
+    padding-block: 6rem;
+}
+
+.aboutSection {
+    padding-block: 10rem;
+    background: url(https://www.sharkys.com/wp-content/uploads/2023/01/power-plate-with-wild-alaska-salmon.jpg) no-repeat center left / cover;
+}
+
+.showcaseSection {
+    text-align: center;
+}
+
+.infoSection {
+    position: relative;
+    /* background-color: rebeccapurple; */
+    /* margin-bottom: 4rem; */
+    background: url(../img/chicken-wings-barbecue-sweetly-sour-sauce-picnic-summer-menu-tasty-food-top-view-flat-lay_2829-6471.avif) right center no-repeat;
+    /* background-size: cover; */
+}
+
+.cardd img {
+    width: 100%;
+    height: 300px;
+}
+
+.cardd {
+    /* padding: 20px; */
+    text-align: center;
+    transition: 0.5s;
+    margin: 20px;
+    width: 30%;
+    /* padding-top: 20px; */
+}
+
+.cardd img {
+    width: 100%;
+}
+
+.cardd:hover {
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+    margin-top: -5px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+@media (max-width:991px) {
+    .cardd {
+        width: 20%;
+        margin: 10px0 10px;
+    }
+}
+
+@media (max-width:795px) {
+    .cardd {
+        width: 50%;
+    }
+}
+
+@media (max-width:391px) {
+    .cardd {
+        width: 100%;
+    }
+}
+
+.login-form input,
+textarea,
+.form-control {
+    border-radius: 0;
+    border: 1px solid black !important;
+    box-shadow: none !important;
+}
+
+.login-form a {
+    color: black;
+}
+
+.login-form a:hover {
+    color: #00435e;
+}
+
+.btn-theme:hover {
+    background-color: var(--black);
+    border-color: var(--black);
+}
+
+.search input {
+    /* background-color: aqua; */
+    /* padding: 10px; */
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid black;
+}
+
+.pass {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.login-form {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.registar a {
+    text-decoration: none;
+    background-color: "#eee";
+    color: #ccc;
+}
+
+.kk img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.filter h6 {
+    border-left: 3px solid black;
+}
+
+.pro a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.pro a:hover {
+    border: none;
+    color: white;
+    background-color: #00435e;
+}
+
+.imgs {
+    background-image: url(../img/pixx.webp);
+    width: 100%;
+    height: 250px;
+}
+
+.moreSection {
+    background-color: #eeee;
+    padding-block: 4rem;
+}
+
+.moreSection img {
+    height: 400px;
+}
+
+.hello {
+    background-color: white;
+}
+
+.showcaseSection h1 {
+    font-weight: 600;
+}
+
+.imagee {
+    background-image: url(../img/top-view-trash-cooking-concept_23-2149056474.avif);
+    width: 100%;
+    height: 200px;
+}
+
+.cont {
+    background-color: #eee;
+    width: 100%;
+}
+
+.sign {
+    background-image: url(../img/yyyy.avif);
+    width: 100%;
+    padding: 4rem 0;
+}
+
+.he {
+    background-color: white;
+    /* padding: 5px; */
+}
+
+.login-form {
+    background-color: #eee;
+}
+
+.mainn {
+    background-color: orange;
+    /* height: 20px; */
+    width: 50px;
+    padding: 80px;
+    border-radius: 2000px;
+}
+
+.errorSection {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.errorSection::before,
+.errorSection::after {
+    content: '';
+    position: absolute;
+    top: 5rem;
+    left: -5rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: var(--black);
+}
+
+.errorSection::after {
+    top: 45%;
+    left: auto;
+    right: -5rem;
+}
+
+.errorSection h1 {
+    font-size: 12rem;
+    font-weight: 800;
+    opacity: 0.2;
+    line-height: 1;
+}
+
+.errorSection span {
+    font-size: 15rem;
+    margin-top: -8rem;
+    font-weight: 800;
+    line-height: 1;
+    display: inline-block;
+}
+
+.errorSection span span {
+    transform: scale(-1);
+}
+
+.errorSection p {
+    margin-top: 2rem;
+}
+
+.forget-section {
+    background-color: #eee;
+}
+
+.forget-card {
+    background-color: white;
+    padding-top: 70px;
+    width: 60%;
+    padding-bottom: 50px;
+    margin-top: 200px;
+    height: 400px;
+}
+
+.password-section {
+    padding-right: 400px;
+    margin-top: -60px;
+    margin-left: -50px;
+    font-size: 25px;
+}
+
+.new-section {
+    padding-right: 280px;
+}
+
+.confirm-section {
+    padding-right: 260px;
+    padding-top: 20px;
+}
+
+.volenteer-card {
+    background-color: white;
+    padding: 2rem;
+}
+
+.volenteer-card form {
+    width: 80%;
+    margin: auto;
+}
+
+.volenteer-card label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.footer {
+    color: #fff;
+    background-color: #00435e;
+}
+
+.footer .logo {
+    filter: brightness(0) invert(1);
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer i {
+    margin-left: 10px;
+}
+
+@media screen and (max-width:1200px) {
+    .btn-theme {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .carousel-inner .carousel-item img {
+        object-fit: cover;
+        object-position: top right;
+    }
+}
+
+@media screen and (max-width:992px) {
+    /* .btn {
+        padding: 20px;
+    } */
+}
+
+@media screen and (max-width:576px) {
+    .imagee {
+        width: 100%;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .imgs {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .errorSection {
+        width: 100%;
+        padding-left: 90px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 14px;
+    }
+    .errorSection::before,
+    .errorSection::after {
+        width: 150px;
+        height: 150px;
+    }
+    .errorSection h1 {
+        font-size: 8rem;
+    }
+    .errorSection span {
+        font-size: 9rem;
+        margin-top: -6rem;
+    }
+}
+
+@media screen and (max-width:576px) {
+    html {
+        font-size: 12px;
+    }
+    .errorSection {
+        padding-left: 30px;
+    }
+    .errorSection::before,
+    .errorSection::after {
+        width: 100px;
+        height: 100px;
+        opacity: 0.5;
+    }
+    .errorSection h1 {
+        font-size: 6rem;
+    }
+    .errorSection span {
+        font-size: 7.5rem;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:320px) {}

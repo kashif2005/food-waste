@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Error404</title>
+</head>
+
+
+<body>
+    <div class="errorSection">
+        <div class="container">
+            <h1>ERROR</h1>
+            <span>40<span>4</span></span>
+            <p>text</p>
+            <a href="index.html" class="btn btn-theme">Return Home</a>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js "></script>
+</body>
+
+</html>
+
+<!-- CSS -->
+
+.errorSection { width: 100%; height: 100vh; min-height: 600px; display: flex; align-items: center; text-align: center; position: relative; overflow: hidden; } .errorSection::before, .errorSection::after { content: ''; position: absolute; top: 5rem; left:
+-5rem; width: 200px; height: 200px; border-radius: 50%; background-color: var(--black); } .errorSection::after { top: 45%; left: auto; right: -5rem; } .errorSection h1 { font-size: 12rem; font-weight: 800; opacity: 0.2; line-height: 1; } .errorSection
+span { font-size: 15rem; margin-top: -8rem; font-weight: 800; line-height: 1; display: inline-block; } .errorSection span span { transform: scale(-1); } .errorSection p { margin-top: 2rem; }
+
+<!--media query -->
+
+@media screen and (max-width:768px) { .errorSection { width: 100%; padding-left: 90px; } } @media screen and (max-width:768px) { html { font-size: 14px; } .errorSection::before, .errorSection::after { width: 150px; height: 150px; } .errorSection h1 {
+font-size: 8rem; } .errorSection span { font-size: 9rem; margin-top: -6rem; } } @media screen and (max-width:576px) { html { font-size: 12px; } .errorSection { padding-left: 30px; } .errorSection::before, .errorSection::after { width: 100px; height: 100px;
+opacity: 0.5; } .errorSection h1 { font-size: 6rem; } .errorSection span { font-size: 7.5rem; margin-top: 0; } }
